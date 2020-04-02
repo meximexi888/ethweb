@@ -553,6 +553,12 @@ body:before {
     -o-transition: opacity .3s;	/* Opera */
 }
 
+.zeact_button_load .typing_loader{
+    margin: 4px auto;
+    width: 3px;
+    height: 3px;
+}
+
 @keyframes load
 {
     0%   {opacity: 0;}
@@ -817,7 +823,7 @@ body:before {
     -o-transition: opacity .3s;	/* Opera */
 }
 
-.p_LoadBlock .circle {
+.circle {
 
     margin: 40px auto;
     position: relative;
