@@ -1,0 +1,979 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    width: 100%;
+    background: #fff;
+    /* overflow: hidden; */
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: Roboto,Noto,Helvetica,Arial,sans-serif;
+
+    color: #333639;
+    /* overflow: hidden; */
+}
+
+.ios body {
+
+    font-family: -apple-system,SF UI Text,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 1.4;
+
+}
+
+
+/*这一句是用来解决在安卓上的点击出现篮框问题*/
+body{ -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+
+/*下面是解决ios上去除微信点击蓝色边框 */
+/* a:focus,
+input:focus,
+p:focus,
+div:focus{
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+-webkit-user-modify:read-write-plaintext-only; 
+} */
+
+
+a {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #e9edf3
+
+}
+a, input, select, textarea {
+
+    outline: 0;
+
+}
+
+p {
+    font-size: 12px;
+    margin: 4px 0px;
+}
+
+h1,h2,h3,h4,h5,h6,h7 {
+    margin: 0px;
+}
+
+#app {
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.page {
+    -webkit-box-sizing: border-box;
+
+    box-sizing: border-box;
+
+    /* position: absolute; */
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    padding-bottom: 50px;
+
+    /* -webkit-transform: translate3d(0,0,0);
+
+    transform: translate3d(0,0,0);
+
+    contain: layout size style;
+
+    overflow: hidden; */
+}
+
+.text_right {
+    text-align: right
+}
+
+
+ .zy_linear_background {
+    background: -webkit-linear-gradient(0deg, #799dd2 ,#5d7bc3) !important; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(0deg, #799dd2 ,#5d7bc3) !important; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(0deg, #799dd2 ,#5d7bc3) !important; /* Firefox 3.6 - 15 */
+    background: linear-gradient(90deg, #799dd2 ,#5d7bc3) !important; /* 标准的语法 */
+    color: #fff  !important;
+}
+
+ .zy_linear_background1 {
+    background: -webkit-linear-gradient(0deg, #7f7aa7, #6a6292) !important; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(0deg, #7f7aa7, #6a6292) !important; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(0deg, #7f7aa7, #6a6292) !important; /* Firefox 3.6 - 15 */
+    background: linear-gradient(90deg, #7f7aa7, #6a6292) !important; /* 标准的语法 */
+    color: #fff  !important;
+}
+
+ .zy_linear_background2 {
+    background: -webkit-linear-gradient(45deg, #fbfbfb ,#f8f8f8) !important; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(45deg, #fbfbfb ,#f8f8f8) !important; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(45deg, #fbfbfb ,#f8f8f8) !important; /* Firefox 3.6 - 15 */
+    background: linear-gradient(45deg, #fbfbfb ,#f8f8f8) !important; /* 标准的语法 */
+}
+
+ .zy_linear_background3 {
+    background: -webkit-linear-gradient(90deg, #f9d06e ,#f19a36) !important; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(90deg, #f9d06e ,#f19a36) !important; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(90deg, #f9d06e ,#f19a36) !important; /* Firefox 3.6 - 15 */
+    background: linear-gradient(90deg, #f9d06e ,#f19a36) !important; /* 标准的语法 */
+    /* color: #fff  !important; */
+
+}
+
+ .zy_linear_background4 {
+    background: -webkit-linear-gradient(90deg, #31404a, #192328) !important; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(90deg, #31404a, #192328) !important; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(90deg, #31404a, #192328) !important; /* Firefox 3.6 - 15 */
+    background: linear-gradient(90deg, #31404a, #192328) !important; /* 标准的语法 */
+    color: #fff  !important;
+}
+
+ .zy_linear_background_disabled {
+    background: -webkit-linear-gradient(90deg, #afafaf, #afafaf) !important; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(90deg, #afafaf, #afafaf) !important; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(90deg, #afafaf, #afafaf) !important; /* Firefox 3.6 - 15 */
+    background: linear-gradient(90deg, #afafaf, #afafaf) !important; /* 标准的语法 */
+    /* background-color: #afafaf !important */
+}
+ .zy_linear_background6 {
+    background: -webkit-linear-gradient(90deg, #ffa464 ,#ff6a00) !important;
+    background: -o-linear-gradient(90deg, #ffa464 ,#ff6a00) !important;
+    background: -moz-linear-gradient(90deg, #ffa464 ,#ff6a00) !important;
+    background: linear-gradient(90deg, #ffa464 ,#ff6a00) !important;
+    color: #fff !important;
+}
+
+.zy_linear_background7 {
+    background: -webkit-linear-gradient(90deg, #db6be4 , #d053da) !important;
+    background: -o-linear-gradient(90deg, #db6be4 , #d053da) !important;
+    background: -moz-linear-gradient(90deg,#db6be4 , #d053da) !important;
+    background: linear-gradient(90deg, #db6be4 , #d053da) !important;
+    color: #fff !important;
+}
+
+.zy_linear_background8 {
+    background: -webkit-linear-gradient(90deg, #202123 , #141517) !important;
+    background: -o-linear-gradient(90deg, #202123 , #141517) !important;
+    background: -moz-linear-gradient(90deg,#202123 , #141517) !important;
+    background: linear-gradient(90deg, #202123 , #141517) !important;
+    color: #fff !important;
+}
+
+.zy_linear_background9 {
+    background: -webkit-linear-gradient(90deg, #d27777 , #c35d5d) !important;
+    background: -o-linear-gradient(90deg, #d27777 , #c35d5d) !important;
+    background: -moz-linear-gradient(90deg, #d27777 , #c35d5d) !important;
+    background: linear-gradient(90deg, #d27777 , #c35d5d) !important;
+    color: #fff !important;
+}
+
+
+ .zy_linear_background5 {
+    background-color: rgba(251, 251, 251, 0.79)
+}
+
+
+.zy_bot_bor,.zy_top_bor {
+    position: relative;
+}
+
+.zy_bot_bor:after, .zy_top_bor:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.12);
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+
+.zy_top_bor:before {
+    top: 0;
+}
+/*弹性滚动卡主的bug*/
+.touch_bug{
+    position: relative;
+    min-height: calc(100% - 38px)
+}
+/* .page-content > * {
+    -webkit-transform: translateZ(0px);
+} */
+
+/*解决上下滚动问题*/
+body:before {
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #333639;
+
+}
+
+.text_center {
+    text-align: center
+}
+
+
+
+@media screen and (max-width: 750px) {
+ 
+    .z_gcg_nav_title a {
+        display: none;
+    }
+ 
+    /* .max1098, .max1098-inner {
+        padding: 0px 8px;
+        position: relative;
+    } */
+
+    .z_balance .zeact_button {
+        margin-top: 2px; 
+    }
+
+    .prize_pool_number {
+        margin: 0px !important;
+        font-size: 20px !important;
+    }
+
+    .prize_pool_number span {
+        padding: 3px 3px !important;
+        margin: 0px 1px !important;
+        border-radius: 4px !important;
+    }
+ 
+    .prize_pool_sub {
+        width: 100% !important;
+    }
+
+    .z_lotter_block {
+        width: 100% !important;
+    }
+
+    .z_lotter_block .zeact_col_20 {
+        display: none;
+    }
+
+    .z_lotter_block .zeact_col_40 {
+        width: 100%;
+    }
+
+    .z_page_block .z_page_block {
+        margin-bottom: 20px;
+    }
+
+    
+    #sidebar {
+        width: 30%;
+    }
+    #sidebar .widget {
+        padding: 8% 7%;
+        margin-bottom: 10px;
+    }
+ 
+}
+.p_Sreach {
+    background-color: #232527;
+    margin: 8px 0px;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 2px 0px;
+}
+
+.p_Sreach .zeact_row {
+    padding: 0px 2px;
+}
+
+.p_Sreach .p_EidDiv .input, .p_Sreach .p_EidDiv .placeholder{
+    /* margin: 0px 6px; */
+    width: calc( 100% - 12px );
+    margin-left: 6px;
+}
+
+.page_list {
+    margin-bottom: 10px;
+}
+
+.title {
+    padding: 8px 0px 2px;
+}
+
+.p_Scroll.index_scroll {
+    position: absolute;
+    height: calc( 100% - 104px );
+    width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+ 
+    /* .z_gcg_nav_title a {
+        display: none;
+    } */
+    .p_Scroll.index_scroll {
+        width: calc( 100% - 16px );
+    }
+    
+}
+
+
+.p_Popup_info .p_EidtBlock {
+    /* padding: 10px; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* .p_Popup_info .p_EidtBlock .zeact_row {
+    position: absolute;
+    width: calc( 100% - 20px );
+    min-height: calc( 100% - 20px );
+} */
+
+
+.p_ArticleDetail {
+    position: relative;
+    background: #232527;
+    border-radius: 4px;
+    padding: 10px 10px 10px;
+    margin-bottom: 10px;
+}
+
+/* .p_ArticleDetail:after {
+    content: '';
+    position: absolute;
+    width: calc( 100% - 20px );
+    height: 1px;
+    background-color: #55575d;
+    bottom: 4px;
+} */
+
+.p_ArticleDetail_commnet {
+    margin: 6px 0px 18px;
+}
+
+.p_ArticleDetail_commnet span{
+    background-color: #dfe5ef;
+    color: #232527;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px 6px;
+    margin: 0px 2px;
+    cursor:pointer
+    /* font-weight: 600; */
+}
+
+.p_border_top {
+    border-top: 1px solid #55575d;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+.zeact_row {
+    display: -webkit-box;
+
+    display: -webkit-flex;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-pack: justify;
+
+    -webkit-justify-content: space-between;
+
+    -ms-flex-pack: justify;
+
+    justify-content: space-between;
+
+    -webkit-flex-wrap: wrap;
+
+    -ms-flex-wrap: wrap;
+
+    flex-wrap: wrap;
+
+    -webkit-box-align: start;
+
+    -webkit-align-items: center;
+
+    -ms-flex-align: start;
+
+    align-items: center;
+
+}
+
+.zeact_row_left.zeact_row  {
+    justify-content: flex-start;
+}
+
+.zeact_last_col_right [class*='zeact_col_']:last-of-type {
+    text-align: right
+}
+
+   .zeact_col_100  {
+    width:100%
+   }
+   .zeact_col_95  {
+    width:95%
+   }
+   .zeact_col_90  {
+    width:90%
+   }
+   .zeact_col_85  {
+    width:85%
+   }
+   .zeact_col_80  {
+    width:80%
+   }
+   .zeact_col_75  {
+    width:75%
+   }
+   .zeact_col_70  {
+    width:70%
+   }
+   .zeact_col_66  {
+    width:66.66666666666666%
+   }
+   .zeact_col_65  {
+    width:65%
+   }
+   .zeact_col_60  {
+    width:60%
+   }
+   .zeact_col_55  {
+    width:55%
+   }
+   .zeact_col_50  {
+    width:50%
+   }
+   .zeact_col_45  {
+    width:45%
+   }
+   .zeact_col_40  {
+    width:40%
+   }
+   .zeact_col_35  {
+    width:35%
+   }
+   .zeact_col_33  {
+    width:33.333333333333336%
+   }
+   .zeact_col_30  {
+    width:30%
+   }
+   .zeact_col_25  {
+    width:25%
+   }
+   .zeact_col_20  {
+    width:20%
+   }
+   .zeact_col_15  {
+    width:15%
+   }
+   .zeact_col_10  {
+    width:10%
+   }
+   .zeact_col_5  {
+    width:5%
+   }
+.p_Text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    display: inline-block;
+    width: 100%;
+
+    /* display:-webkit-box; 
+    -webkit-box-orient:vertical; 
+    -webkit-line-clamp:2; */
+}
+.zy_loader_icon {
+    height: 100%;
+    width: 26px;
+    margin: auto;
+    display: flex;
+}
+
+.zy_loader_icon img{
+    width: 100%;
+    border: 0px !important;
+}
+.zeact_button {
+    padding: 4px 14px;
+    display: flex;
+    border-radius: 4px;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.zeact_button .zy_loader_icon {
+    height: 14px;
+}
+
+.zeact_button_load {
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    animation: load .3s;
+    -webkit-animation: load .3s;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.zeact_button_load.hidden {
+    opacity: 0;
+    transition: opacity .3s;
+    -moz-transition: opacity .3s;	/* Firefox 4 */
+    -webkit-transition: opacity .3s;	/* Safari 和 Chrome */
+    -o-transition: opacity .3s;	/* Opera */
+}
+
+@keyframes load
+{
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+ 
+@-webkit-keyframes load /* Safari 与 Chrome */
+{
+    0%   {opacity: 0;}
+    100% {opacity: 1;z-index: 0;}
+}
+.p_Popup_block{
+    position: fixed;
+    z-index: 99;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.p_Popup_block .p_Popup_background {
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    animation: popup .4s;
+    -webkit-animation: popup .4s;
+    
+}
+
+.p_Popup_block .p_Popup_info{
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    max-width: 1096px;
+    height: 85%;
+    background-color: #333639;
+    box-shadow: 0px 0px 25px #090a0a;
+    border-radius: 6px 6px 0px 0px;
+    opacity: 1;
+    animation: popupinfo .4s;
+    -webkit-animation: popupinfo .4s;
+}
+
+.p_Popup_block.hied .p_Popup_background {
+    opacity: 0;
+    transition: opacity .4s;
+    -webkit-transition: opacity .4s; /* Safari */
+}
+
+.p_Popup_block.hied .p_Popup_info {
+    top: 100%;
+    transition: top .4s;
+    -webkit-transition: top .4s; /* Safari */
+}
+
+@media screen and (min-width: 1096px) {
+    .p_Popup_block .p_Popup_info {
+        left: 50%;
+        margin-left: -548px;
+    }
+}
+
+@keyframes popup
+{
+    0%   {background-color: rgba(0,0,0,0);}
+    100% {background-color: rgba(0,0,0,0.4);}
+}
+ 
+@-webkit-keyframes popup /* Safari 与 Chrome */
+{
+    0%   {background-color: rgba(0,0,0,0);}
+    100% {background-color: rgba(0,0,0,0.4);}
+}
+
+@keyframes popupinfo
+{
+    0%   {
+        /* opacity: 0; */
+        top: 100%;
+    }
+    100% {
+        opacity: 1;
+        top: 15%;
+    }
+}
+ 
+@-webkit-keyframes popupinfo /* Safari 与 Chrome */
+{
+    0%   {
+        /* opacity: 0; */
+        top: 100%;
+    }
+    100% {
+        opacity: 1;
+        top: 15%;
+    }
+}
+.p_EidtBlock {
+    /* padding: 10px; */
+    width: 100%;
+    color: #d9e0e9 ;
+}
+
+.p_EidtBlock .p_Scroll {
+    height: calc( 100% - 120px );
+}
+
+
+.p_EidtBlock .zeact_row {
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.p_EidtBlock .p_EidDiv,.p_EidtBlock .p_MarkDown {
+    position: relative;
+    padding: 0px 4px 0px 0px;
+    min-height: 300px;
+}
+
+.p_EidtBlock .p_MarkDown {
+    padding: 0px 0px 0px 10px;
+}
+
+.p_EidtBlock .p_EidDiv:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top:0px;
+    height: 100%;
+    width: 0.5px;
+    background-color: #1b1d21;
+}
+
+
+.p_EidtBlock .button {
+    margin-top: 18px;
+}
+
+.p_EidtBlock .button .zeact_button {
+    margin: 0px 8px;
+}
+/* .p_EidDiv:-webkit-autofill {  
+    -webkit-box-shadow: 0 0 0px 100px white inset !important;  //不能为transparent的任意颜色，利用内部阴影遮住浏览器默认的黄色背景
+　　 box-shadow: 0 0 0px 100px white inset !important;
+}  */
+
+.p_EidDiv {
+    position: relative;
+}
+
+.p_EidDiv p {
+    margin: 1em 0px !important;
+}
+
+
+.p_EidDiv .input:focus { 
+    outline: none; 
+} 
+
+.input:empty+.placeholder {
+    opacity:1;
+}
+
+.p_EidDiv .placeholder {
+    position: absolute;
+    top: 0px;
+    color: #55575d;
+    opacity:0;
+    /* z-index: -1; */
+    transition: opacity .2s;
+    -moz-transition: opacity .2s;	/* Firefox 4 */
+    -webkit-transition: opacity .2s;	/* Safari 和 Chrome */
+    -o-transition: opacity .2s;	/* Opera */
+}
+
+.p_EidDiv .input{
+    height: 100%;
+    min-height:-webkit-fill-available;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.p_MarkDown p{
+    margin: 1em 0px;
+}
+.p_Scroll{
+    overflow: auto;
+
+    -webkit-overflow-scrolling: touch;
+
+    -webkit-box-sizing: border-box;
+
+    box-sizing: border-box;
+
+    height: 100% ;
+
+    position: relative;
+
+    z-index: 1;
+
+    contain: layout size style;
+
+    will-change: scroll-position;
+
+    color: #dfe5ef
+}
+.max1098-inner {
+    max-width: 1098px;
+    margin: auto;
+    position: relative;
+    height: 100%;
+}
+
+.p_Page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #dfe5ef;
+    background-color: #343639;
+    z-index: 1;
+}
+
+@media screen and (max-width: 750px) {
+ 
+    /* .z_gcg_nav_title a {
+        display: none;
+    } */
+ 
+    .max1098, .max1098-inner {
+        padding: 0px 8px;
+        position: relative;
+    }
+}
+
+.p_LoadBlock {
+    position: relative;
+    height: 100%;
+}
+
+.p_LoadBlock_back {
+    position: absolute;
+    top : 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #343639;
+    z-index: 1;
+    opacity: 1;
+    /* display: flex;
+    align-items: center; */
+}
+
+.p_LoadBlock_back.hidden {
+    opacity: 0;
+    transition: opacity .3s;
+    -moz-transition: opacity .3s;	/* Firefox 4 */
+    -webkit-transition: opacity .3s;	/* Safari 和 Chrome */
+    -o-transition: opacity .3s;	/* Opera */
+}
+
+.p_LoadBlock .circle {
+
+    margin: 40px auto;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background-color: 
+    rgba(255,255,255,.5);
+    box-shadow: -14px 0px 0px
+    rgba(255,255,255,1);
+    border-radius: 50%;
+    -webkit-animation: circle_classic 1s ease-in-out infinite alternate;
+    -moz-animation: circle_classic 1s ease-in-out infinite alternate;
+    animation: circle_classic 1s ease-in-out infinite alternate;
+
+}
+
+.typing_loader{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    -webkit-animation: typing 1s linear infinite alternate;
+       -moz-animation: Typing 1s linear infinite alternate;
+            animation: typing 1s linear infinite alternate;
+    margin: 46px auto; /* Not necessary- its only for layouting*/  
+    position: relative;
+    left: -12px;
+}
+@-webkit-keyframes typing{
+    0%{
+        background-color: rgba(255,255,255, 1);
+        box-shadow: 12px 0px 0px 0px rgba(255,255,255,0.2), 
+                    24px 0px 0px 0px rgba(255,255,255,0.2);
+      }
+    25%{ 
+        background-color: rgba(255,255,255, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(255,255,255,2), 
+                    24px 0px 0px 0px rgba(255,255,255,0.2);
+    }
+    75%{ background-color: rgba(255,255,255, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(255,255,255,0.2), 
+                    24px 0px 0px 0px rgba(255,255,255,1);
+      }
+}
+
+@-moz-keyframes typing{
+   0%{
+        background-color: rgba(255,255,255, 1);
+        box-shadow: 12px 0px 0px 0px rgba(255,255,255,0.2), 
+                    24px 0px 0px 0px rgba(255,255,255,0.2);
+      }
+    25%{ 
+        background-color: rgba(255,255,255, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(255,255,255,2), 
+                    24px 0px 0px 0px rgba(255,255,255,0.2);
+    }
+    75%{ background-color: rgba(255,255,255, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(255,255,255,0.2), 
+                    24px 0px 0px 0px rgba(255,255,255,1);
+      }
+}
+
+@keyframes typing{
+   0%{
+        background-color: rgba(255,255,255, 1);
+        box-shadow: 12px 0px 0px 0px rgba(255,255,255,0.2), 
+                    24px 0px 0px 0px rgba(255,255,255,0.2);
+      }
+    25%{ 
+        background-color: rgba(255,255,255, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(255,255,255,2), 
+                    24px 0px 0px 0px rgba(255,255,255,0.2);
+    }
+    75%{ background-color: rgba(255,255,255, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(255,255,255,0.2), 
+                    24px 0px 0px 0px rgba(255,255,255,1);
+      }
+}
+
+
+@keyframes circle_classic
+{
+    0% {
+
+        opacity: 0.1;
+        -webkit-transform: rotate(0deg) scale(0.5);
+    
+    }
+    100% {
+    
+        opacity: 1;
+        -webkit-transform: rotate(360deg) scale(1.2);
+    
+    }
+}
+ 
+@-webkit-keyframes circle_classic /* Safari 与 Chrome */
+{
+    0% {
+
+        opacity: 0.1;
+        -webkit-transform: rotate(0deg) scale(0.5);
+    
+    }
+    100% {
+    
+        opacity: 1;
+        -webkit-transform: rotate(360deg) scale(1.2);
+    
+    }
+}
+
+.p_Router_start.p_Router_die {
+    opacity: 0;
+    transition: opacity .3s;
+    -moz-transition: opacity .3s;	/* Firefox 4 */
+    -webkit-transition: opacity .3s;	/* Safari 和 Chrome */
+    -o-transition: opacity .3s;	/* Opera */
+}
+
+.p_Router_start {
+    opacity: 1;
+    animation: openPage .3s;
+    -webkit-animation: openPage .3s;
+
+}
+
+@keyframes openPage
+{
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+ 
+@-webkit-keyframes openPage /* Safari 与 Chrome */
+{
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+.metamask {
+    /* width: 50%; */
+    margin: 300px auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.metamask a{
+    color: #333639;
+    padding: 18px;
+    display: block;
+    margin: 15px 0px;
+    background-color: bisque;
+}
+
+.metamask p{
+    font-size: 30px;
+}
+
+
+/*# sourceMappingURL=index.css.map*/

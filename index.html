@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=viewport content="target-densitydpi=device-dpi,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <!-- <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" /> -->
+    <!-- Color theme for statusbar -->
+    <meta name=theme-color content=#2196f3>
+    <!-- Your app title -->
+    <title>以太立场</title>
+  <link href=index.css?2b306c832708f0c805c3 rel=stylesheet></head>
+  <body>
+    <div id=app></div>
+    
+    <!-- <script src="./static/js/strapdown.js"></script> -->
+    <script src=./static/js/base64.js></script>
+    <script src=./static/js/pako.js></script>
+    <script>
+      Date.prototype.Format = function (fmt) { //author: meizz 
+          var o = {
+              "M+": this.getMonth() + 1, //月份 
+              "d+": this.getDate(), //日 
+              "h+": this.getHours(), //小时 
+              "m+": this.getMinutes(), //分 
+              "s+": this.getSeconds(), //秒 
+              "q+": Math.floor((this.getMonth() + 3) / 3), //季度 
+              "S": this.getMilliseconds() //毫秒 
+          };
+          if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+          for (var k in o)
+          if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+          return fmt;
+      }
+    </script>
+  <script type=text/javascript src=index.js?2b306c832708f0c805c3></script></body>
+</html>
